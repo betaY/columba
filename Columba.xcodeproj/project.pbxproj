@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD54AD581B61D30C00005FB2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */; };
+		CD54AD5A1B61DC1E00005FB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */; };
+		CDE9F9A71B6172CE00D2B1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9A61B6172CE00D2B1E5 /* AppDelegate.swift */; };
+		CDE9F9A91B6172CE00D2B1E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9A81B6172CE00D2B1E5 /* ViewController.swift */; };
+		CDE9F9AC1B6172CE00D2B1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE9F9AA1B6172CE00D2B1E5 /* Main.storyboard */; };
+		CDE9F9AE1B6172CE00D2B1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE9F9AD1B6172CE00D2B1E5 /* Assets.xcassets */; };
+		CDE9F9BC1B6172CF00D2B1E5 /* ColumbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9BB1B6172CF00D2B1E5 /* ColumbaTests.swift */; };
+		CDE9F9C71B6172CF00D2B1E5 /* ColumbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9C61B6172CF00D2B1E5 /* ColumbaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE9F9B81B6172CF00D2B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE9F99B1B6172CE00D2B1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE9F9A21B6172CE00D2B1E5;
+			remoteInfo = Columba;
+		};
+		CDE9F9C31B6172CF00D2B1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE9F99B1B6172CE00D2B1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE9F9A21B6172CE00D2B1E5;
+			remoteInfo = Columba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDE9F9A31B6172CE00D2B1E5 /* Columba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE9F9A61B6172CE00D2B1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDE9F9A81B6172CE00D2B1E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDE9F9AB1B6172CE00D2B1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDE9F9AD1B6172CE00D2B1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDE9F9B21B6172CE00D2B1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE9F9B71B6172CF00D2B1E5 /* ColumbaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColumbaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE9F9BB1B6172CF00D2B1E5 /* ColumbaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumbaTests.swift; sourceTree = "<group>"; };
+		CDE9F9BD1B6172CF00D2B1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE9F9C21B6172CF00D2B1E5 /* ColumbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColumbaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE9F9C61B6172CF00D2B1E5 /* ColumbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumbaUITests.swift; sourceTree = "<group>"; };
+		CDE9F9C81B6172CF00D2B1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE9F9A01B6172CE00D2B1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9B41B6172CF00D2B1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9BF1B6172CF00D2B1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE9F99A1B6172CE00D2B1E5 = {
+			isa = PBXGroup;
+			children = (
+				CDE9F9A51B6172CE00D2B1E5 /* Columba */,
+				CDE9F9BA1B6172CF00D2B1E5 /* ColumbaTests */,
+				CDE9F9C51B6172CF00D2B1E5 /* ColumbaUITests */,
+				CDE9F9A41B6172CE00D2B1E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE9F9A41B6172CE00D2B1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9F9A31B6172CE00D2B1E5 /* Columba.app */,
+				CDE9F9B71B6172CF00D2B1E5 /* ColumbaTests.xctest */,
+				CDE9F9C21B6172CF00D2B1E5 /* ColumbaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE9F9A51B6172CE00D2B1E5 /* Columba */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9F9A61B6172CE00D2B1E5 /* AppDelegate.swift */,
+				CDE9F9A81B6172CE00D2B1E5 /* ViewController.swift */,
+				CDE9F9AA1B6172CE00D2B1E5 /* Main.storyboard */,
+				CDE9F9AD1B6172CE00D2B1E5 /* Assets.xcassets */,
+				CDE9F9B21B6172CE00D2B1E5 /* Info.plist */,
+				CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */,
+				CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */,
+			);
+			path = Columba;
+			sourceTree = "<group>";
+		};
+		CDE9F9BA1B6172CF00D2B1E5 /* ColumbaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9F9BB1B6172CF00D2B1E5 /* ColumbaTests.swift */,
+				CDE9F9BD1B6172CF00D2B1E5 /* Info.plist */,
+			);
+			path = ColumbaTests;
+			sourceTree = "<group>";
+		};
+		CDE9F9C51B6172CF00D2B1E5 /* ColumbaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9F9C61B6172CF00D2B1E5 /* ColumbaUITests.swift */,
+				CDE9F9C81B6172CF00D2B1E5 /* Info.plist */,
+			);
+			path = ColumbaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE9F9A21B6172CE00D2B1E5 /* Columba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE9F9CB1B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "Columba" */;
+			buildPhases = (
+				CDE9F99F1B6172CE00D2B1E5 /* Sources */,
+				CDE9F9A01B6172CE00D2B1E5 /* Frameworks */,
+				CDE9F9A11B6172CE00D2B1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Columba;
+			productName = Columba;
+			productReference = CDE9F9A31B6172CE00D2B1E5 /* Columba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE9F9B61B6172CF00D2B1E5 /* ColumbaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE9F9CE1B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "ColumbaTests" */;
+			buildPhases = (
+				CDE9F9B31B6172CF00D2B1E5 /* Sources */,
+				CDE9F9B41B6172CF00D2B1E5 /* Frameworks */,
+				CDE9F9B51B6172CF00D2B1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE9F9B91B6172CF00D2B1E5 /* PBXTargetDependency */,
+			);
+			name = ColumbaTests;
+			productName = ColumbaTests;
+			productReference = CDE9F9B71B6172CF00D2B1E5 /* ColumbaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDE9F9C11B6172CF00D2B1E5 /* ColumbaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE9F9D11B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "ColumbaUITests" */;
+			buildPhases = (
+				CDE9F9BE1B6172CF00D2B1E5 /* Sources */,
+				CDE9F9BF1B6172CF00D2B1E5 /* Frameworks */,
+				CDE9F9C01B6172CF00D2B1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE9F9C41B6172CF00D2B1E5 /* PBXTargetDependency */,
+			);
+			name = ColumbaUITests;
+			productName = ColumbaUITests;
+			productReference = CDE9F9C21B6172CF00D2B1E5 /* ColumbaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE9F99B1B6172CE00D2B1E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Beta;
+				TargetAttributes = {
+					CDE9F9A21B6172CE00D2B1E5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CVHGDSY375;
+					};
+					CDE9F9B61B6172CF00D2B1E5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CDE9F9A21B6172CE00D2B1E5;
+					};
+					CDE9F9C11B6172CF00D2B1E5 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CDE9F9A21B6172CE00D2B1E5;
+					};
+				};
+			};
+			buildConfigurationList = CDE9F99E1B6172CE00D2B1E5 /* Build configuration list for PBXProject "Columba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE9F99A1B6172CE00D2B1E5;
+			productRefGroup = CDE9F9A41B6172CE00D2B1E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE9F9A21B6172CE00D2B1E5 /* Columba */,
+				CDE9F9B61B6172CF00D2B1E5 /* ColumbaTests */,
+				CDE9F9C11B6172CF00D2B1E5 /* ColumbaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE9F9A11B6172CE00D2B1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE9F9AE1B6172CE00D2B1E5 /* Assets.xcassets in Resources */,
+				CDE9F9AC1B6172CE00D2B1E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9B51B6172CF00D2B1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9C01B6172CF00D2B1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE9F99F1B6172CE00D2B1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD54AD5A1B61DC1E00005FB2 /* LoginViewController.swift in Sources */,
+				CDE9F9A91B6172CE00D2B1E5 /* ViewController.swift in Sources */,
+				CDE9F9A71B6172CE00D2B1E5 /* AppDelegate.swift in Sources */,
+				CD54AD581B61D30C00005FB2 /* RegisterPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9B31B6172CF00D2B1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE9F9BC1B6172CF00D2B1E5 /* ColumbaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE9F9BE1B6172CF00D2B1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE9F9C71B6172CF00D2B1E5 /* ColumbaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE9F9B91B6172CF00D2B1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE9F9A21B6172CE00D2B1E5 /* Columba */;
+			targetProxy = CDE9F9B81B6172CF00D2B1E5 /* PBXContainerItemProxy */;
+		};
+		CDE9F9C41B6172CF00D2B1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE9F9A21B6172CE00D2B1E5 /* Columba */;
+			targetProxy = CDE9F9C31B6172CF00D2B1E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDE9F9AA1B6172CE00D2B1E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDE9F9AB1B6172CE00D2B1E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDE9F9C91B6172CF00D2B1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDE9F9CA1B6172CF00D2B1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE9F9CC1B6172CF00D2B1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Columba/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.Columba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDE9F9CD1B6172CF00D2B1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Columba/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.Columba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDE9F9CF1B6172CF00D2B1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColumbaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.ColumbaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Columba.app/Columba";
+			};
+			name = Debug;
+		};
+		CDE9F9D01B6172CF00D2B1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColumbaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.ColumbaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Columba.app/Columba";
+			};
+			name = Release;
+		};
+		CDE9F9D21B6172CF00D2B1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColumbaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.ColumbaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Columba;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CDE9F9D31B6172CF00D2B1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColumbaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.moe.ColumbaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Columba;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE9F99E1B6172CE00D2B1E5 /* Build configuration list for PBXProject "Columba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE9F9C91B6172CF00D2B1E5 /* Debug */,
+				CDE9F9CA1B6172CF00D2B1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE9F9CB1B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "Columba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE9F9CC1B6172CF00D2B1E5 /* Debug */,
+				CDE9F9CD1B6172CF00D2B1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE9F9CE1B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "ColumbaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE9F9CF1B6172CF00D2B1E5 /* Debug */,
+				CDE9F9D01B6172CF00D2B1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE9F9D11B6172CF00D2B1E5 /* Build configuration list for PBXNativeTarget "ColumbaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE9F9D21B6172CF00D2B1E5 /* Debug */,
+				CDE9F9D31B6172CF00D2B1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE9F99B1B6172CE00D2B1E5 /* Project object */;
+}
