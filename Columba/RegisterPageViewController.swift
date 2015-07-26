@@ -74,7 +74,7 @@ class RegisterPageViewController: UIViewController {
                 return
             }
             
-            println("response = \(response)")
+//            println("response = \(response)")
             let responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
             println("responseString = \(responseString)")
             

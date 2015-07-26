@@ -19,13 +19,13 @@ class MySQLDao {
 		$this->dbpass = "poi";
 		$this->dbname = "columba";
 	}
-	
+
 	public function openConnection() {
 		$this->conn = new mysqli("beta.moe", "yudachi", "poi", "columba");
 
 		if(mysqli_connect_errno())
 			echo new Exception("Could not establish connection with database");
-		#else 
+		#else
 		#	echo new Exception("success");
 	}
 
@@ -55,7 +55,7 @@ class MySQLDao {
 
 	public function getUserDetailsWithPassword($email, $userPassword) {
 		$returnValue = array();
-		$sql = "select id, user_email from user where user_email='" .$email. "' and user_password='" .$user_password. "'";
+		$sql = "select id, user_email from user where user_email='".$email."' and user_password='".$userPassword."'";
 
 		$result = $this->conn->query($sql);
 		if($result != null && (mysqli_num_rows($result) >= 1)) {

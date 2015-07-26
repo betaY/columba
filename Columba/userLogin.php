@@ -10,22 +10,22 @@ $returnValue=array();
 if (empty($email) || empty($password)) {
   $returnValue["status"]="error";
   $returnValue["message"]="Missing required field";
-  echo json_decode($returnValue);
+  echo json_encode($returnValue);
   return;
 }
 $secure_password=md5($password);
 
-$dao=new MySQLDao();
+$dao = new MySQLDao();
 $dao->openConnection();
-$userDetails=$dao->getUserDetailsPassword($email,$secure_password);
+$userDetails=$dao->getUserDetailsWithPassword($email,$secure_password);
 
 if (!empty($userDetails)) {
   $returnValue["status"]="Success";
   $returnValue["message"]="User is registered";
-  echo json_decode($returnValue);
+  echo json_encode($returnValue);
 } else {
   $returnValue["status"]="error";
-  $returnValue["message"]="User is not found";
+  $returnValue["message"]="User or Password not correct!";
   echo json_encode($returnValue);
 }
 
