@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD54AD581B61D30C00005FB2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */; };
 		CD54AD5A1B61DC1E00005FB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */; };
+		CD62117A1B631A8500ED7733 /* Conn.php in Resources */ = {isa = PBXBuildFile; fileRef = CD6211791B631A8500ED7733 /* Conn.php */; };
 		CDE9F9A71B6172CE00D2B1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9A61B6172CE00D2B1E5 /* AppDelegate.swift */; };
 		CDE9F9A91B6172CE00D2B1E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9F9A81B6172CE00D2B1E5 /* ViewController.swift */; };
 		CDE9F9AC1B6172CE00D2B1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE9F9AA1B6172CE00D2B1E5 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD6211791B631A8500ED7733 /* Conn.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Conn.php; sourceTree = "<group>"; };
 		CDE9F9A31B6172CE00D2B1E5 /* Columba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE9F9A61B6172CE00D2B1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE9F9A81B6172CE00D2B1E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CDE9F9B21B6172CE00D2B1E5 /* Info.plist */,
 				CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */,
 				CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */,
+				CD6211791B631A8500ED7733 /* Conn.php */,
 			);
 			path = Columba;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD62117A1B631A8500ED7733 /* Conn.php in Resources */,
 				CDE9F9AE1B6172CE00D2B1E5 /* Assets.xcassets in Resources */,
 				CDE9F9AC1B6172CE00D2B1E5 /* Main.storyboard in Resources */,
 			);
