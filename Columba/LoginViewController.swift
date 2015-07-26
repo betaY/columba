@@ -29,7 +29,6 @@ class LoginViewController: UIViewController {
         let userEmail = userEmailTextField.text
         let userPassword = userPasswordTextField.text
         
-//        if (userEmail.isEmpty || userPassword.isEmpty) { return; }
         
         let myUrl: NSURL! = NSURL(string: "http://beta.moe/userLogin.php")
         let request: NSMutableURLRequest! = NSMutableURLRequest(URL: myUrl)
@@ -89,6 +88,7 @@ class LoginViewController: UIViewController {
                         
                         myAlert.addAction(okAction)
                         self.presentViewController(myAlert, animated: true, completion: nil)
+                        self.userPasswordTextField.text = nil
                     })
 
                 }
