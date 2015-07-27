@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD29D2151B66F7BD0095CF26 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD29D2141B66F7BD0095CF26 /* Main2.storyboard */; };
 		CD54AD581B61D30C00005FB2 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */; };
 		CD54AD5A1B61DC1E00005FB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */; };
 		CD62117A1B631A8500ED7733 /* Conn.php in Resources */ = {isa = PBXBuildFile; fileRef = CD6211791B631A8500ED7733 /* Conn.php */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD29D2141B66F7BD0095CF26 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD6211791B631A8500ED7733 /* Conn.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Conn.php; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				CD54AD571B61D30C00005FB2 /* RegisterPageViewController.swift */,
 				CD54AD591B61DC1E00005FB2 /* LoginViewController.swift */,
 				CD6211791B631A8500ED7733 /* Conn.php */,
+				CD29D2141B66F7BD0095CF26 /* Main2.storyboard */,
 			);
 			path = Columba;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				CD62117A1B631A8500ED7733 /* Conn.php in Resources */,
 				CDE9F9AE1B6172CE00D2B1E5 /* Assets.xcassets in Resources */,
+				CD29D2151B66F7BD0095CF26 /* Main2.storyboard in Resources */,
 				CDE9F9AC1B6172CE00D2B1E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
