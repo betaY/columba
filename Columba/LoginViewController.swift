@@ -74,13 +74,6 @@ class LoginViewController: UIViewController {
                     self.dismissViewControllerAnimated(true, completion: nil)
                 } else {
                     var messageToDisplay:String = parseJSON["message"] as! String
-//                    var myAlert = UIAlertController(title: "Alert", message: "error", preferredStyle: UIAlertControllerStyle.Alert)
-//                    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {action in
-//                        self.dismissViewControllerAnimated(true, completion: nil)
-//                    }
-//
-//                    myAlert.addAction(okAction)
-//                    self.presentViewController(myAlert, animated: true, completion: nil)
                     dispatch_async(dispatch_get_main_queue(), {
                         
                         var myAlert = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.Alert)
@@ -90,41 +83,10 @@ class LoginViewController: UIViewController {
                         self.presentViewController(myAlert, animated: true, completion: nil)
                         self.userPasswordTextField.text = nil
                     })
-
                 }
-                
-//                if(!isUserRegistered) {
-//                    messageToDisplay = parseJSON["message"] as! String
-//                }
-                
-//                dispatch_async(dispatch_get_main_queue(), {
-//                    
-//                    var myAlert = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.Alert)
-//                    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {action in
-//                        self.dismissViewControllerAnimated(true, completion: nil)
-//                    }
-//                    
-//                    myAlert.addAction(okAction)
-//                    self.presentViewController(myAlert, animated: true, completion: nil)
-//                })
             }
         }
-        task.resume()
-        
-        
-        //check userEmail and Password
-//        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail")
-//        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword")
-//        if (userEmailStored == userEmail) {
-//            if (userPasswordStored == userPassword) {
-//                // Login is successful
-//                
-//                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-//                NSUserDefaults.standardUserDefaults().synchronize()
-//                self.dismissViewControllerAnimated(true, completion: nil)
-//            }
-//        }
-        
+        task.resume()        
     }
 
     /*
