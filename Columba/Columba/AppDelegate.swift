@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Columba
 //
-//  Created by Beta on 15/7/23.
-//  Copyright © 2015年 Beta. All rights reserved.
+//  Created by Beta on 15/7/28.
+//  Copyright (c) 2015年 Beta. All rights reserved.
 //
 
 import UIKit
@@ -16,30 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        var rootViewController = self.window!.rootViewController
-        
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-////        let mainStoryboard: UIStoryboard = self.s
-//        
-        var isUserLoggedIn: Bool = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn")
-//
-        if(!isUserLoggedIn) {
-            var loginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("loginView") as! LoginViewController
-//
-//            
-////            window!.rootViewController = loginViewController
-            self.window?.rootViewController = loginViewController
-            self.window?.makeKeyAndVisible()
-        } else {
-//
-            var protectedPage = mainStoryboard.instantiateViewControllerWithIdentifier("protectedView") as! ViewController
-//
-////            window!.rootViewController = protectedPage
-            self.window?.rootViewController = protectedPage
-            self.window?.makeKeyAndVisible()
-        }
-        
         return true
     }
 
