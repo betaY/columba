@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--test-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SliderMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,14 +38,22 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="xQb-oc-f2a">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="pQ6-ka-jwK"/>
-                        <barButtonItem key="rightBarButtonItem" title="&gt;" id="7Wk-d1-Yof"/>
+                    <navigationItem key="navigationItem" title="test" id="xQb-oc-f2a">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="pQ6-ka-jwK">
+                            <connections>
+                                <action selector="LeftSideButtonTapped:" destination="BYZ-38-t0r" id="CIa-uw-Knv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="&gt;" id="7Wk-d1-Yof">
+                            <connections>
+                                <action selector="RightSideButtonTapped:" destination="BYZ-38-t0r" id="S92-cb-SnR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="5"/>
+            <point key="canvasLocation" x="604" y="103"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="Zxu-pg-BRq">
@@ -59,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left side" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cR-3u-cPr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Left side" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cR-3u-cPr">
                                 <rect key="frame" x="16" y="289" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,10 +80,11 @@
                             <constraint firstItem="1cR-3u-cPr" firstAttribute="top" secondItem="R6B-X7-9A2" secondAttribute="bottom" constant="269" id="WTw-MC-vYn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3hV-zP-HDV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idL-bg-pmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="5"/>
+            <point key="canvasLocation" x="-40" y="799"/>
         </scene>
         <!--Right Side View Controller-->
         <scene sceneID="ibh-Qz-rcg">
@@ -105,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0v-sc-0pS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="5"/>
+            <point key="canvasLocation" x="2228" y="799"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NIm-XQ-cuz">
@@ -123,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoA-Eb-Ytb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-387" y="5"/>
+            <point key="canvasLocation" x="-40" y="103"/>
         </scene>
     </scenes>
 </document>
