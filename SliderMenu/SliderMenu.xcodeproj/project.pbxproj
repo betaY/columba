@@ -194,6 +194,7 @@
 		CD98BFAD1B67D5830072058F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Beta;
 				TargetAttributes = {
@@ -462,6 +463,7 @@
 				CD98BFD61B67D5830072058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD98BFD71B67D5830072058F /* Build configuration list for PBXNativeTarget "SliderMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +472,7 @@
 				CD98BFD91B67D5830072058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
