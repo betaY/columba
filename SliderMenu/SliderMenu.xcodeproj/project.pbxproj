@@ -19,6 +19,7 @@
 		CD98BFEA1B67D7DF0072058F /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFE31B67D7DF0072058F /* MMDrawerController.m */; };
 		CD98BFEB1B67D7DF0072058F /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFE61B67D7DF0072058F /* MMDrawerVisualState.m */; };
 		CD98BFEC1B67D7DF0072058F /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFE81B67D7DF0072058F /* UIViewController+MMDrawerController.m */; };
+		CDBA6C381B6E858300339299 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA6C371B6E858300339299 /* MyCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CD98BFE61B67D7DF0072058F /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		CD98BFE71B67D7DF0072058F /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		CD98BFE81B67D7DF0072058F /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		CDBA6C371B6E858300339299 /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CD98BFB81B67D5830072058F /* Supporting Files */,
 				CD98BFDA1B67D71A0072058F /* LeftSideViewController.swift */,
 				CD98BFDC1B67D72A0072058F /* RightSideViewController.swift */,
+				CDBA6C371B6E858300339299 /* MyCustomCell.swift */,
 			);
 			path = SliderMenu;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBA6C381B6E858300339299 /* MyCustomCell.swift in Sources */,
 				CD98BFBD1B67D5830072058F /* ViewController.swift in Sources */,
 				CD98BFDB1B67D71A0072058F /* LeftSideViewController.swift in Sources */,
 				CD98BFE91B67D7DF0072058F /* MMDrawerBarButtonItem.m in Sources */,
