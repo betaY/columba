@@ -8,12 +8,21 @@
 
 import UIKit
 
-class LeftSideViewController: UIViewController {
+class LeftSideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var manu:[String] = ["Account Setting", "Sign in/Sign up"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerClass(MyCustomCell.self, forCellReuseIdentifier: "myCell")
+        self.view.addSubview(tableView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +31,18 @@ class LeftSideViewController: UIViewController {
     }
     
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.manu.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! MyCustomCell
+//        cell.myLabel.text = self.manu[indexPath.row]
+        println(cell.myLabel?.text)
+        cell.textLabel?.text = self.manu[indexPath.row]
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 
