@@ -43,6 +43,14 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("You select \(self.manu[indexPath.row])")
+        if(self.manu[indexPath.row] == "Sign in/Sign up") {
+            println(2333)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
