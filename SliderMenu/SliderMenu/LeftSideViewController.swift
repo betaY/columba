@@ -45,10 +45,36 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("You select \(self.manu[indexPath.row])")
         if(self.manu[indexPath.row] == "Sign in/Sign up") {
-            println(2333)
+            var loginNav = self.storyboard?.instantiateViewControllerWithIdentifier("loginNav") as! UINavigationController
+//            var loginView = loginNav.topViewController as! LoginViewController
+            var loginView = self.storyboard?.instantiateViewControllerWithIdentifier("loginView") as! LoginViewController
+            var navController = UINavigationController(rootViewController: loginView)
+            var appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            appDelegate.centerContainer?.centerViewController = navController
+            appDelegate.centerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+            
         }
+    }
+//        println("You select \(self.manu[indexPath.row])")
+//        if(self.manu[indexPath.row] == "Sign in/Sign up") {
+//            println(2333)
+//            var mainStoryboard : UIStoryboard!
+//            mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//            let nav = mainStoryboard.instantiateViewControllerWithIdentifier("navView") as! UINavigationController
+//            let viewController = nav.topViewController as! ViewController
+//            
+////            let viewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController") as! UIViewController
+////            viewController.performSegueWithIdentifier("loginSegue", sender: self)
+//            let login : LoginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("loginView") as! LoginViewController
+//            
+//            self.presentViewController(nav, animated: true, completion: nil)
+////            viewController.performSegueWithIdentifier("loginSegue", sender: self)
+////            self.presentViewController(LoginViewController(), animated: true, completion: nil)
+////            performSegueWithIdentifier("loginSegue", sender: self)
+//        }
     }
     
     /*
@@ -61,4 +87,4 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
     }
     */
 
-}
+
