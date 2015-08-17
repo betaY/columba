@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD34416D1B7A98FC00804822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34416B1B7A98FC00804822 /* LoginViewController.swift */; };
+		CD34416E1B7A98FC00804822 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34416C1B7A98FC00804822 /* RegisterPageViewController.swift */; };
 		CD98BFBB1B67D5830072058F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFBA1B67D5830072058F /* AppDelegate.swift */; };
 		CD98BFBD1B67D5830072058F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFBC1B67D5830072058F /* ViewController.swift */; };
 		CD98BFC01B67D5830072058F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD98BFBE1B67D5830072058F /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD34416B1B7A98FC00804822 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD34416C1B7A98FC00804822 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		CD98BFB51B67D5830072058F /* SliderMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD98BFB91B67D5830072058F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD98BFBA1B67D5830072058F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD34416A1B7A98AB00804822 /* login/register */ = {
+			isa = PBXGroup;
+			children = (
+				CD34416B1B7A98FC00804822 /* LoginViewController.swift */,
+				CD34416C1B7A98FC00804822 /* RegisterPageViewController.swift */,
+			);
+			name = login/register;
+			sourceTree = "<group>";
+		};
 		CD98BFAC1B67D5830072058F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		CD98BFB71B67D5830072058F /* SliderMenu */ = {
 			isa = PBXGroup;
 			children = (
+				CD34416A1B7A98AB00804822 /* login/register */,
 				CD98BFDE1B67D7B60072058F /* MMDrawerController */,
 				CD98BFBA1B67D5830072058F /* AppDelegate.swift */,
 				CD98BFBC1B67D5830072058F /* ViewController.swift */,
@@ -259,9 +273,11 @@
 				CD98BFDB1B67D71A0072058F /* LeftSideViewController.swift in Sources */,
 				CD98BFE91B67D7DF0072058F /* MMDrawerBarButtonItem.m in Sources */,
 				CD98BFEC1B67D7DF0072058F /* UIViewController+MMDrawerController.m in Sources */,
+				CD34416E1B7A98FC00804822 /* RegisterPageViewController.swift in Sources */,
 				CD98BFDD1B67D72A0072058F /* RightSideViewController.swift in Sources */,
 				CD98BFEA1B67D7DF0072058F /* MMDrawerController.m in Sources */,
 				CD98BFBB1B67D5830072058F /* AppDelegate.swift in Sources */,
+				CD34416D1B7A98FC00804822 /* LoginViewController.swift in Sources */,
 				CD98BFEB1B67D7DF0072058F /* MMDrawerVisualState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
