@@ -135,6 +135,10 @@ class RegisterPageViewController: UIViewController {
         self.presentViewController(myAlert, animated: true, completion: nil)
     }
     
+    @IBAction func backLogIn(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
