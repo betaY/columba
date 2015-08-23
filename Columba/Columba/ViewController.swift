@@ -32,5 +32,9 @@ class ViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().synchronize()
         self.performSegueWithIdentifier("loginView", sender: self)
     }
+    @IBAction func LeftSideButtonTapped(sender: AnyObject) {
+        var appDelegete = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegete.centerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+    }
 }
 
