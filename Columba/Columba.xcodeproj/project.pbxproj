@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD177BF11B88E364006D76BF /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177BE81B88E364006D76BF /* MMDrawerBarButtonItem.m */; };
+		CD177BF21B88E364006D76BF /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177BEA1B88E364006D76BF /* MMDrawerController.m */; };
+		CD177BF31B88E364006D76BF /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177BED1B88E364006D76BF /* MMDrawerVisualState.m */; };
+		CD177BF41B88E364006D76BF /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177BEF1B88E364006D76BF /* UIViewController+MMDrawerController.m */; };
+		CD177BF61B88E5F1006D76BF /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */; };
+		CD6EC96F1B8A642700E47EAA /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */; };
 		CD98BF861B67D1880072058F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BF851B67D1880072058F /* AppDelegate.swift */; };
 		CD98BF881B67D1880072058F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BF871B67D1880072058F /* ViewController.swift */; };
 		CD98BF8D1B67D1880072058F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD98BF8C1B67D1880072058F /* Images.xcassets */; };
@@ -28,6 +34,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD177BE61B88E363006D76BF /* Columba-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Columba-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD177BE71B88E364006D76BF /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		CD177BE81B88E364006D76BF /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		CD177BE91B88E364006D76BF /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		CD177BEA1B88E364006D76BF /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		CD177BEB1B88E364006D76BF /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		CD177BEC1B88E364006D76BF /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		CD177BED1B88E364006D76BF /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		CD177BEE1B88E364006D76BF /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		CD177BEF1B88E364006D76BF /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
 		CD98BF801B67D1880072058F /* Columba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD98BF841B67D1880072058F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD98BF851B67D1880072058F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD177BE51B88E330006D76BF /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				CD177BE71B88E364006D76BF /* MMDrawerBarButtonItem.h */,
+				CD177BE81B88E364006D76BF /* MMDrawerBarButtonItem.m */,
+				CD177BE91B88E364006D76BF /* MMDrawerController.h */,
+				CD177BEA1B88E364006D76BF /* MMDrawerController.m */,
+				CD177BEB1B88E364006D76BF /* MMDrawerController+Subclass.h */,
+				CD177BEC1B88E364006D76BF /* MMDrawerVisualState.h */,
+				CD177BED1B88E364006D76BF /* MMDrawerVisualState.m */,
+				CD177BEE1B88E364006D76BF /* UIViewController+MMDrawerController.h */,
+				CD177BEF1B88E364006D76BF /* UIViewController+MMDrawerController.m */,
+				CD177BE61B88E363006D76BF /* Columba-Bridging-Header.h */,
+			);
+			name = MMDrawerController;
+			sourceTree = "<group>";
+		};
 		CD98BF771B67D1880072058F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,7 @@
 		CD98BF821B67D1880072058F /* Columba */ = {
 			isa = PBXGroup;
 			children = (
+				CD177BE51B88E330006D76BF /* MMDrawerController */,
 				CD98BFA71B67D1E40072058F /* register/login */,
 				CD98BF851B67D1880072058F /* AppDelegate.swift */,
 				CD98BF871B67D1880072058F /* ViewController.swift */,
@@ -88,6 +124,8 @@
 				CD98BF8C1B67D1880072058F /* Images.xcassets */,
 				CD98BF8E1B67D1880072058F /* LaunchScreen.xib */,
 				CD98BF831B67D1880072058F /* Supporting Files */,
+				CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */,
+				CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */,
 			);
 			path = Columba;
 			sourceTree = "<group>";
@@ -229,8 +267,14 @@
 			files = (
 				CD98BFAB1B67D2100072058F /* RegisterPageViewController.swift in Sources */,
 				CD98BFAA1B67D2100072058F /* LoginViewController.swift in Sources */,
+				CD177BF11B88E364006D76BF /* MMDrawerBarButtonItem.m in Sources */,
+				CD177BF41B88E364006D76BF /* UIViewController+MMDrawerController.m in Sources */,
 				CD98BF881B67D1880072058F /* ViewController.swift in Sources */,
+				CD177BF21B88E364006D76BF /* MMDrawerController.m in Sources */,
+				CD6EC96F1B8A642700E47EAA /* MyCustomCell.swift in Sources */,
 				CD98BF861B67D1880072058F /* AppDelegate.swift in Sources */,
+				CD177BF61B88E5F1006D76BF /* LeftSideViewController.swift in Sources */,
+				CD177BF31B88E364006D76BF /* MMDrawerVisualState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Columba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Columba/Columba-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -363,11 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Columba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Columba/Columba-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -424,6 +473,7 @@
 				CD98BFA11B67D1890072058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD98BFA21B67D1890072058F /* Build configuration list for PBXNativeTarget "ColumbaTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +482,7 @@
 				CD98BFA41B67D1890072058F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
