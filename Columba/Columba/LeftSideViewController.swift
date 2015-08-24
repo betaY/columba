@@ -11,18 +11,40 @@ import UIKit
 class LeftSideViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
+
+    @IBOutlet weak var userEmail: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    let tap = UITapGestureRecognizer()
     var manu:[String] = ["Account Setting", "SignOut"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.imageView.image = UIImage(named: "shimakaze")
+        self.imageView.layer.cornerRadius = self.imageView.frame.width / 2
+        self.imageView.layer.masksToBounds = true
+        self.imageView.userInteractionEnabled = true
+        tap.addTarget(self, action: "tappedImage")
+        imageView.addGestureRecognizer(tap)
+        
+        let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
+        self.userEmail.text = email
+//        println(email)
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(MyCustomCell.self, forCellReuseIdentifier: "myCell")
-        
         self.view.addSubview(tableView)
+        
+    }
+    
+    func tappedImage() {
+        println("image tapped")
+        let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
+        println(email)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +73,6 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn")
             NSUserDefaults.standardUserDefaults().synchronize()
             self.performSegueWithIdentifier("loginView", sender: self)
-//            var loginViewController = self.storyboard?.instantiateViewControllerWithIdentifier("loginView") as! LoginViewController
-//            var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//            appDelegate.centerContainer!.centerViewController = loginViewController
             
             break
         default:
@@ -61,7 +80,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-
+    
     /*
     // MARK: - Navigation
 
