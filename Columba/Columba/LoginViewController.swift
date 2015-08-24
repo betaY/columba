@@ -70,10 +70,11 @@ class LoginViewController: UIViewController {
                 
                 if (resultValue == "Success"){
                     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
+                    
+                    NSUserDefaults.standardUserDefaults().setValue("\(userEmail)", forKey: "email")
+                    NSUserDefaults.standardUserDefaults().setValue("\(userPassword)", forKey: "password")
                     NSUserDefaults.standardUserDefaults().synchronize()
                     
-//                    var centerView = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-//                    self.presentViewController(centerView, animated: true, completion: nil)
                     self.dismissViewControllerAnimated(true, completion: nil)
                 } else {
                     var messageToDisplay:String = parseJSON["message"] as! String
