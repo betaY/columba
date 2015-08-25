@@ -17,10 +17,15 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     let tap = UITapGestureRecognizer()
     var manu:[String] = ["Account Setting", "SignOut"]
-    
+    var userData = NSUserDefaults.standardUserDefaults().valueForKey("userdata") as? UserData
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        
+//        let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
+        
+        
+//        super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.imageView.image = UIImage(named: "shimakaze")
         self.imageView.layer.cornerRadius = self.imageView.frame.width / 2
@@ -29,9 +34,11 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         tap.addTarget(self, action: "tappedImage")
         imageView.addGestureRecognizer(tap)
         
-        let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
-        self.userEmail.text = email
-//        println(email)
+//        println("123123123123123\(userData.getUserEmail())")
+//        if ((userData.getUserEmail()) != nil) {
+//            userEmail.text = userData.getUserEmail()!
+//        }
+//        email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
         
         
         tableView.delegate = self
@@ -39,12 +46,13 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.registerClass(MyCustomCell.self, forCellReuseIdentifier: "myCell")
         self.view.addSubview(tableView)
         
+        super.viewDidLoad()
+        
     }
-    
     func tappedImage() {
         println("image tapped")
-        let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as! String
-        println(email)
+        userEmail.text = NSUserDefaults.standardUserDefaults().valueForKey("userEmail") as! String
+        println(NSUserDefaults.standardUserDefaults().valueForKey("userEmail"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +79,8 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
             break
         case 1:
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn")
+            NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "userEmail")
+            NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "userPassword")
             NSUserDefaults.standardUserDefaults().synchronize()
             self.performSegueWithIdentifier("loginView", sender: self)
             
