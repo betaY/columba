@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
+//    var userData: UserData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,10 +71,17 @@ class LoginViewController: UIViewController {
                 
                 if (resultValue == "Success"){
                     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-                    
-                    NSUserDefaults.standardUserDefaults().setValue("\(userEmail)", forKey: "email")
-                    NSUserDefaults.standardUserDefaults().setValue("\(userPassword)", forKey: "password")
+                    NSUserDefaults.standardUserDefaults().setValue("\(userEmail)", forKey: "userEmail")
+                    NSUserDefaults.standardUserDefaults().setValue("\(userPassword)", forKey: "userPassword")
+//                    var userData = UserData(userEmail: "\(userEmail)", userPassword: "\(userPassword)")
+//                    self.userData?.setUserEmail("\(userEmail)")
+//                    self.userData?.setUserPassword("\(userPassword)")
+//                    userData.setUserEmail("\(userEmail)")
+//                    userData.setUserPassword("\(userPassword)")
+//                    NSUserDefaults.standardUserDefaults().setValue(userData, forKey: "userdata")
                     NSUserDefaults.standardUserDefaults().synchronize()
+                    
+//                    println("==================\(userData.getUserEmail()!) \(userData.getUserPassword()!)")
                     
                     self.dismissViewControllerAnimated(true, completion: nil)
                 } else {
