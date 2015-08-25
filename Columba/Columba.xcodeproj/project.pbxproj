@@ -13,6 +13,7 @@
 		CD177BF41B88E364006D76BF /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD177BEF1B88E364006D76BF /* UIViewController+MMDrawerController.m */; };
 		CD177BF61B88E5F1006D76BF /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */; };
 		CD6EC96F1B8A642700E47EAA /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */; };
+		CD6EC9AA1B8BE33000E47EAA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EC9A91B8BE33000E47EAA /* UserData.swift */; };
 		CD98BF861B67D1880072058F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BF851B67D1880072058F /* AppDelegate.swift */; };
 		CD98BF881B67D1880072058F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BF871B67D1880072058F /* ViewController.swift */; };
 		CD98BF8D1B67D1880072058F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD98BF8C1B67D1880072058F /* Images.xcassets */; };
@@ -46,6 +47,7 @@
 		CD177BEF1B88E364006D76BF /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		CD6EC9A91B8BE33000E47EAA /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		CD98BF801B67D1880072058F /* Columba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD98BF841B67D1880072058F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD98BF851B67D1880072058F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				CD98BF831B67D1880072058F /* Supporting Files */,
 				CD177BF51B88E5F1006D76BF /* LeftSideViewController.swift */,
 				CD6EC96E1B8A642700E47EAA /* MyCustomCell.swift */,
+				CD6EC9A91B8BE33000E47EAA /* UserData.swift */,
 			);
 			path = Columba;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				CD177BF11B88E364006D76BF /* MMDrawerBarButtonItem.m in Sources */,
 				CD177BF41B88E364006D76BF /* UIViewController+MMDrawerController.m in Sources */,
 				CD98BF881B67D1880072058F /* ViewController.swift in Sources */,
+				CD6EC9AA1B8BE33000E47EAA /* UserData.swift in Sources */,
 				CD177BF21B88E364006D76BF /* MMDrawerController.m in Sources */,
 				CD6EC96F1B8A642700E47EAA /* MyCustomCell.swift in Sources */,
 				CD98BF861B67D1880072058F /* AppDelegate.swift in Sources */,
