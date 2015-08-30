@@ -51,7 +51,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     func tappedImage() {
         println("image tapped")
-        userEmail.text = (NSUserDefaults.standardUserDefaults().valueForKey("userEmail") as! String)
+        userEmail.text = NSUserDefaults.standardUserDefaults().valueForKey("userEmail") as? String
         println(NSUserDefaults.standardUserDefaults().valueForKey("userEmail"))
     }
 
