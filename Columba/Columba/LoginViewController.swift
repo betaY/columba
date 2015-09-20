@@ -38,9 +38,9 @@ class LoginViewController: UIViewController {
         let postString = "email=\(userEmail)&password=\(userPassword)"
         
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        println("url \(myUrl)")
-        println("post string \(postString)")
-        println("request \(request.HTTPBody)")
+        print("url \(myUrl)")
+        print("post string \(postString)")
+        print("request \(request.HTTPBody)")
         
         
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
@@ -49,25 +49,25 @@ class LoginViewController: UIViewController {
 //            println("hello ")
             
             if error != nil {
-                println("error=\(error)")
+                print("error=\(error)")
                 return
             }
             
 //            println("response = \(response)")
-            let responseString = NSString(data: data, encoding: NSUTF8StringEncoding)
-            println("responseString = \(responseString)")
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+            print("responseString = \(responseString)")
             
-            var err: NSError?
-            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary
-            let jsonArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSArray
-            println("json = \(json) err = \(err)")
-            println("array = \(jsonArray)")
+            let _: NSError?
+            let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary
+            let jsonArray = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSArray
+//            print("json = \(json) err = \(err)")
+            print("array = \(jsonArray)")
             
             
             
             if let parseJSON = json {
-                var resultValue = parseJSON["status"] as! String
-                println("result: \(resultValue)")
+                let resultValue = parseJSON["status"] as! String
+                print("result: \(resultValue)")
                 
                 if (resultValue == "Success"){
                     NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
@@ -85,10 +85,10 @@ class LoginViewController: UIViewController {
                     
                     self.dismissViewControllerAnimated(true, completion: nil)
                 } else {
-                    var messageToDisplay:String = parseJSON["message"] as! String
+                    let messageToDisplay:String = parseJSON["message"] as! String
                     dispatch_async(dispatch_get_main_queue(), {
                         
-                        var myAlert = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.Alert)
+                        let myAlert = UIAlertController(title: "Alert", message: messageToDisplay, preferredStyle: UIAlertControllerStyle.Alert)
                         let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
                         
                         myAlert.addAction(okAction)

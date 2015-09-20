@@ -50,9 +50,9 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     func tappedImage() {
-        println("image tapped")
+        print("image tapped")
         userEmail.text = NSUserDefaults.standardUserDefaults().valueForKey("userEmail") as? String
-        println(NSUserDefaults.standardUserDefaults().valueForKey("userEmail"))
+        print(NSUserDefaults.standardUserDefaults().valueForKey("userEmail"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,7 +65,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! MyCustomCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as! MyCustomCell
         
 //        println(cell.myLabel.text)
         cell.textLabel?.text = self.manu[indexPath.row]
