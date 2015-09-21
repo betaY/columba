@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Columba
+//  col
 //
-//  Created by Beta on 15/7/28.
-//  Copyright (c) 2015年 Beta. All rights reserved.
+//  Created by Beta on 15/9/20.
+//  Copyright © 2015年 Beta. All rights reserved.
 //
 
 import UIKit
@@ -15,13 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var centerContainer: MMDrawerController?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        _ = self.window?.rootViewController
 
-        
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        _ = self.window?.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
         let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
         
         let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController
@@ -36,9 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = centerContainer
         window?.makeKeyAndVisible()
         
+        
         return true
     }
-
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

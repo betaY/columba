@@ -27,8 +27,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTapped(sender: AnyObject) {
         
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
+        let userEmail = userEmailTextField!.text as String!
+        let userPassword = userPasswordTextField!.text as String!
+        
+        if (userEmail=="" || userPassword=="") {
+            let alert = UIAlertController(title: "Warning", message: "cannot let username or password empty", preferredStyle: UIAlertControllerStyle.Alert)
+            let okaction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:nil)
+            alert.addAction(okaction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
         
         
         let myUrl: NSURL! = NSURL(string: "http://beta.moe/userLogin.php")
@@ -40,7 +47,7 @@ class LoginViewController: UIViewController {
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         print("url \(myUrl)")
         print("post string \(postString)")
-        print("request \(request.HTTPBody)")
+        print("request \(request.HTTPBody!)")
         
         
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
@@ -53,7 +60,7 @@ class LoginViewController: UIViewController {
                 return
             }
             
-//            println("response = \(response)")
+            print("response = \(response)")
             let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
             print("responseString = \(responseString)")
             

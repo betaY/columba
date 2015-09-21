@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Columba
+//  col
 //
-//  Created by Beta on 15/7/23.
+//  Created by Beta on 15/9/20.
 //  Copyright © 2015年 Beta. All rights reserved.
 //
 
@@ -37,4 +37,3 @@ class ViewController: UIViewController {
         appDelegete.centerContainer?.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
 }
-

@@ -19,9 +19,9 @@
 		CD98BF8D1B67D1880072058F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD98BF8C1B67D1880072058F /* Images.xcassets */; };
 		CD98BF901B67D1880072058F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD98BF8E1B67D1880072058F /* LaunchScreen.xib */; };
 		CD98BF9C1B67D1890072058F /* ColumbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BF9B1B67D1890072058F /* ColumbaTests.swift */; };
-		CD98BFA61B67D1C00072058F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD98BFA51B67D1C00072058F /* Main.storyboard */; };
 		CD98BFAA1B67D2100072058F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFA81B67D2100072058F /* LoginViewController.swift */; };
 		CD98BFAB1B67D2100072058F /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98BFA91B67D2100072058F /* RegisterPageViewController.swift */; };
+		CDF07D361BAF923600E3836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF07D351BAF923600E3836B /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +57,9 @@
 		CD98BF951B67D1890072058F /* ColumbaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColumbaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD98BF9A1B67D1890072058F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD98BF9B1B67D1890072058F /* ColumbaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumbaTests.swift; sourceTree = "<group>"; };
-		CD98BFA51B67D1C00072058F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CD98BFA81B67D2100072058F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD98BFA91B67D2100072058F /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		CDF07D351BAF923600E3836B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				CD98BFA71B67D1E40072058F /* register/login */,
 				CD98BF851B67D1880072058F /* AppDelegate.swift */,
 				CD98BF871B67D1880072058F /* ViewController.swift */,
-				CD98BFA51B67D1C00072058F /* Main.storyboard */,
+				CDF07D351BAF923600E3836B /* Main.storyboard */,
 				CD98BF8C1B67D1880072058F /* Images.xcassets */,
 				CD98BF8E1B67D1880072058F /* LaunchScreen.xib */,
 				CD98BF831B67D1880072058F /* Supporting Files */,
@@ -211,7 +211,9 @@
 		CD98BF781B67D1880072058F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Beta;
 				TargetAttributes = {
 					CD98BF7F1B67D1880072058F = {
@@ -248,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF07D361BAF923600E3836B /* Main.storyboard in Resources */,
 				CD98BF901B67D1880072058F /* LaunchScreen.xib in Resources */,
-				CD98BFA61B67D1C00072058F /* Main.storyboard in Resources */,
 				CD98BF8D1B67D1880072058F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +335,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -404,6 +407,7 @@
 				INFOPLIST_FILE = Columba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beta.moe.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Columba/Columba-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,6 +423,7 @@
 				INFOPLIST_FILE = Columba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beta.moe.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Columba/Columba-Bridging-Header.h";
 			};
@@ -438,6 +443,7 @@
 				);
 				INFOPLIST_FILE = ColumbaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beta.moe.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Columba.app/Columba";
 			};
@@ -453,6 +459,7 @@
 				);
 				INFOPLIST_FILE = ColumbaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beta.moe.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Columba.app/Columba";
 			};
