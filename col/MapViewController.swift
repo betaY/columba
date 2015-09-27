@@ -66,7 +66,6 @@ class MapViewController: UIViewController {
     
     // start map
     @IBOutlet weak var mapReview: MKMapView!
-
     
     // initial location
     let initialLocation = CLLocation(latitude:30.5816460000,longitude:114.2931260000)
@@ -76,12 +75,11 @@ class MapViewController: UIViewController {
     
     
     
-
     // add pin point
     func addLocation(title:String,latitude:CLLocationDegrees, longtitude:CLLocationDegrees){
-        //let location = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
-        //let annotation = MyAnnotation(coordinate: location, title: title)
-        //mapReview.addAnnotation(annotation)
+        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+        let annotation = MyAnnotation(coordinate: location, title: title, pincolor: .purple)
+        mapReview.addAnnotation(annotation)
     }
     
     // Search
