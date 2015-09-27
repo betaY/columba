@@ -211,9 +211,10 @@
 		CD98BF781B67D1880072058F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0700;
+
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0640;
+
 				ORGANIZATIONNAME = Beta;
 				TargetAttributes = {
 					CD98BF7F1B67D1880072058F = {
