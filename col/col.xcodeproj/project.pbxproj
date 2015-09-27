@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806CB46E1BB8884B00AE7C52 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806CB46D1BB8884B00AE7C52 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		CDF07D441BAF969200E3836B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF07D431BAF969200E3836B /* AppDelegate.swift */; };
 		CDF07D461BAF969200E3836B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF07D451BAF969200E3836B /* ViewController.swift */; };
 		CDF07D491BAF969200E3836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF07D471BAF969200E3836B /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		806CB46D1BB8884B00AE7C52 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		CDF07D401BAF969200E3836B /* col.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = col.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF07D431BAF969200E3836B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF07D451BAF969200E3836B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CDF07D851BAF991D00E3836B /* LeftSideViewController.swift */,
 				CDF07D861BAF991D00E3836B /* MyCustomCell.swift */,
 				CDF07D871BAF991D00E3836B /* UserData.swift */,
+				806CB46D1BB8884B00AE7C52 /* MapViewController.swift */,
 			);
 			path = col;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				CDF07D7C1BAF972B00E3836B /* MMDrawerBarButtonItem.m in Sources */,
 				CDF07D8A1BAF991D00E3836B /* UserData.swift in Sources */,
 				CDF07D7F1BAF972B00E3836B /* UIViewController+MMDrawerController.m in Sources */,
+				806CB46E1BB8884B00AE7C52 /* MapViewController.swift in Sources */,
 				CDF07D891BAF991D00E3836B /* MyCustomCell.swift in Sources */,
 				CDF07D7D1BAF972B00E3836B /* MMDrawerController.m in Sources */,
 				CDF07D881BAF991D00E3836B /* LeftSideViewController.swift in Sources */,
@@ -556,6 +560,7 @@
 				CDF07D6A1BAF969300E3836B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDF07D6B1BAF969300E3836B /* Build configuration list for PBXNativeTarget "colTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +569,7 @@
 				CDF07D6D1BAF969300E3836B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDF07D6E1BAF969300E3836B /* Build configuration list for PBXNativeTarget "colUITests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +578,7 @@
 				CDF07D701BAF969300E3836B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
