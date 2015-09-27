@@ -16,7 +16,7 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     let tap = UITapGestureRecognizer()
-    var manu:[String] = ["Account Setting", "SignOut"]
+    var manu:[String] = ["Account Setting", "Map", "SignOut"]
     var userData = NSUserDefaults.standardUserDefaults().valueForKey("userdata") as? UserData
 
     
@@ -78,6 +78,9 @@ class LeftSideViewController: UIViewController, UITableViewDataSource, UITableVi
         case 0:
             break
         case 1:
+            self.performSegueWithIdentifier("mapView", sender: self)
+            break;
+        case 2:
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn")
             NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "userEmail")
             NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "userPassword")
