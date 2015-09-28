@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		806CB46E1BB8884B00AE7C52 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806CB46D1BB8884B00AE7C52 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		806CB4781BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806CB4771BB8B8DD00AE7C52 /* MyAnnotation.swift */; settings = {ASSET_TAGS = (); }; };
+		806CB4791BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806CB4771BB8B8DD00AE7C52 /* MyAnnotation.swift */; settings = {ASSET_TAGS = (); }; };
+		806CB47A1BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806CB4771BB8B8DD00AE7C52 /* MyAnnotation.swift */; settings = {ASSET_TAGS = (); }; };
 		CDF07D441BAF969200E3836B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF07D431BAF969200E3836B /* AppDelegate.swift */; };
 		CDF07D461BAF969200E3836B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF07D451BAF969200E3836B /* ViewController.swift */; };
 		CDF07D491BAF969200E3836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF07D471BAF969200E3836B /* Main.storyboard */; };
@@ -45,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		806CB46D1BB8884B00AE7C52 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		806CB4771BB8B8DD00AE7C52 /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		CDF07D401BAF969200E3836B /* col.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = col.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF07D431BAF969200E3836B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF07D451BAF969200E3836B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				CDF07D861BAF991D00E3836B /* MyCustomCell.swift */,
 				CDF07D871BAF991D00E3836B /* UserData.swift */,
 				806CB46D1BB8884B00AE7C52 /* MapViewController.swift */,
+				806CB4771BB8B8DD00AE7C52 /* MyAnnotation.swift */,
 			);
 			path = col;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				CDF07D7D1BAF972B00E3836B /* MMDrawerController.m in Sources */,
 				CDF07D881BAF991D00E3836B /* LeftSideViewController.swift in Sources */,
 				CDF07D441BAF969200E3836B /* AppDelegate.swift in Sources */,
+				806CB4781BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806CB4791BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */,
 				CDF07D591BAF969200E3836B /* colTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806CB47A1BB8B8DD00AE7C52 /* MyAnnotation.swift in Sources */,
 				CDF07D641BAF969300E3836B /* colUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

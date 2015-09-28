@@ -78,7 +78,7 @@ class MapViewController: UIViewController {
     // add pin point
     func addLocation(title:String,latitude:CLLocationDegrees, longtitude:CLLocationDegrees){
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
-        let annotation = MyAnnotation(coordinate: location, title: title, pincolor: .purple)
+        let annotation = MyAnnotation(coordinate: location, title: title)
         mapReview.addAnnotation(annotation)
     }
     
