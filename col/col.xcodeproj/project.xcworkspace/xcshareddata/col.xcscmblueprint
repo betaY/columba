@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BD886D9AC49BF2696D78C2E33058750FF5BD3374",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BD886D9AC49BF2696D78C2E33058750FF5BD3374" : 0,
+    "A0987DC587E1CDA64A4AB6895EA7BB4A8F6D4B36" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6C9E0599-FBEF-4240-853A-96A2895D92A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BD886D9AC49BF2696D78C2E33058750FF5BD3374" : "columba\/",
+    "A0987DC587E1CDA64A4AB6895EA7BB4A8F6D4B36" : "MapSearching\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "col",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "col\/col.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/autumn22222\/MapSearching.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A0987DC587E1CDA64A4AB6895EA7BB4A8F6D4B36"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/autumn22222\/columba.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD886D9AC49BF2696D78C2E33058750FF5BD3374"
+    }
+  ]
+}
